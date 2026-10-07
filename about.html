@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="About CyberShield Academy: the purpose of this site, its learning objectives, and its commitment to ethical, defensive cybersecurity education.">
+  <meta name="theme-color" content="#040813">
+  <title>About | CyberShield Academy</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="container nav" aria-label="Main navigation">
+      <a class="brand" href="index.html" aria-label="CyberShield Academy – home">
+        <svg class="brand-mark" viewBox="0 0 48 48" role="img" aria-label="CyberShield logo: a shield with a padlock">
+          <defs>
+            <linearGradient id="lg-about" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#00e5ff"/>
+              <stop offset="1" stop-color="#2f8bff"/>
+            </linearGradient>
+          </defs>
+          <path d="M24 3 42 9v14c0 11-7.500 18.500-18 22C13.500 41.500 6 34 6 23V9z" fill="url(#lg-about)"/>
+          <path d="M24 8 37 12.500V23c0 8.200-5.300 14-13 17-7.700-3-13-8.800-13-17V12.500z" fill="#06101c"/>
+          <rect x="17" y="22" width="14" height="11" rx="2" fill="#00e5ff"/>
+          <path d="M20 22v-3.500a4 4 0 0 1 8 0V22" fill="none" stroke="#00e5ff" stroke-width="2.500"/>
+        </svg>
+        <span>Cyber<em>Shield</em></span>
+      </a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu">
+      <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true"><span></span><span></span><span></span></label>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="attacks.html">Attacks</a></li>
+        <li><a href="countermeasures.html">Countermeasures</a></li>
+        <li><a href="threats.html">Threats</a></li>
+        <li><a href="best-practices.html">Best Practices</a></li>
+        <li><a href="incident-response.html">Incident Response</a></li>
+        <li><a href="about.html" aria-current="page">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="page-header" aria-labelledby="page-title">
+      <div class="container">
+        <span class="eyebrow">About this project</span>
+        <h1 id="page-title"><span class="gradient-text">About CyberShield Academy</span></h1>
+        <p>A free, beginner-friendly resource that explains cybersecurity attacks and the defenses that stop them.</p>
+      </div>
+    </section>
+
+    <!-- ===== Purpose ===== -->
+    <section class="section" aria-labelledby="purpose-title">
+      <div class="container two-col">
+        <div>
+          <span class="eyebrow">Our purpose</span>
+          <h2 id="purpose-title">Why this website exists</h2>
+          <p>Most security incidents begin with something ordinary: a convincing email, a reused password, a delayed update. This website aims to make cybersecurity concepts clear and approachable so that students, families, small teams and professionals can recognize threats and respond confidently.</p>
+          <p>Every page follows one rule: explain the idea, then focus on how to detect, prevent, mitigate and recover.</p>
+        </div>
+        <div class="grid grid-2">
+          <div class="card">
+            <div class="card-icon" aria-hidden="true">📘</div>
+            <h3>Learn</h3>
+            <p>Plain-language explanations of attacks and threat actors.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon" aria-hidden="true">🛡️</div>
+            <h3>Defend</h3>
+            <p>Practical countermeasures and best-practice checklists.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon" aria-hidden="true">🚨</div>
+            <h3>Respond</h3>
+            <p>A clear process for when something goes wrong.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon" aria-hidden="true">🌱</div>
+            <h3>Grow</h3>
+            <p>A foundation for further study and security careers.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Learning objectives ===== -->
+    <section class="section section-alt" aria-labelledby="objectives-title">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Learning objectives</span>
+          <h2 id="objectives-title">What you should take away</h2>
+          <p>After exploring this website, you should be able to:</p>
+        </div>
+        <ol class="objective-list">
+          <li>Describe the confidentiality, integrity and availability goals of cybersecurity.</li>
+          <li>Recognize common attacks such as phishing, malware, ransomware, DDoS, SQL injection, MITM, brute force, social engineering and zero-day exploits.</li>
+          <li>Identify warning signs that suggest an attack may be underway.</li>
+          <li>Explain key countermeasures and which attacks each one helps prevent.</li>
+          <li>Distinguish the main threat actors and their motivations.</li>
+          <li>Describe how organizations assess and prioritize cybersecurity risk.</li>
+          <li>Apply practical habits for passwords, email, devices, networks and data.</li>
+          <li>Outline the six phases of incident response and why a plan matters.</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===== Ethics statement ===== -->
+    <section class="section" aria-labelledby="ethics-title">
+      <div class="container">
+        <div class="callout">
+          <div class="callout-icon" aria-hidden="true">⚖️</div>
+          <div>
+            <h2 id="ethics-title">Ethical, educational and defensive</h2>
+            <p>This website is intended solely for ethical, educational and defensive cybersecurity awareness. It explains attacks at a conceptual level so people can protect themselves. It does not provide malicious code, attack commands, credential-theft instructions or steps for compromising systems.</p>
+            <p>Accessing systems or data without permission is illegal and harmful. If you want to explore security hands-on, do so only in environments you own or are explicitly authorized to test, and consider pursuing recognized certifications and responsible disclosure programs.</p>
+          </div>
+        </div>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="attacks.html">Start with Attacks</a>
+          <a class="btn btn-secondary" href="best-practices.html">Try the Checklist</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="index.html">CyberShield Academy</a>
+          <p>An educational website about cybersecurity attacks and countermeasures. Content explains threats conceptually and focuses on detection, prevention, mitigation and recovery.</p>
+        </div>
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <h2>Explore</h2>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="attacks.html">Attacks</a></li>
+            <li><a href="countermeasures.html">Countermeasures</a></li>
+            <li><a href="threats.html">Threats</a></li>
+            <li><a href="best-practices.html">Best Practices</a></li>
+            <li><a href="incident-response.html">Incident Response</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 CyberShield Academy. All rights reserved.</p>
+        <p class="edu-only">For educational and defensive purposes only.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

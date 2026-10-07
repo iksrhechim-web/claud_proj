@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="What to do when a cyberattack is suspected: a six-step incident response process, an emergency checklist, and why every organization needs a plan.">
+  <meta name="theme-color" content="#040813">
+  <title>Incident Response | CyberShield Academy</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="container nav" aria-label="Main navigation">
+      <a class="brand" href="index.html" aria-label="CyberShield Academy – home">
+        <svg class="brand-mark" viewBox="0 0 48 48" role="img" aria-label="CyberShield logo: a shield with a padlock">
+          <defs>
+            <linearGradient id="lg-ir" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#00e5ff"/>
+              <stop offset="1" stop-color="#2f8bff"/>
+            </linearGradient>
+          </defs>
+          <path d="M24 3 42 9v14c0 11-7.500 18.500-18 22C13.500 41.500 6 34 6 23V9z" fill="url(#lg-ir)"/>
+          <path d="M24 8 37 12.500V23c0 8.200-5.300 14-13 17-7.700-3-13-8.800-13-17V12.500z" fill="#06101c"/>
+          <rect x="17" y="22" width="14" height="11" rx="2" fill="#00e5ff"/>
+          <path d="M20 22v-3.500a4 4 0 0 1 8 0V22" fill="none" stroke="#00e5ff" stroke-width="2.500"/>
+        </svg>
+        <span>Cyber<em>Shield</em></span>
+      </a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu">
+      <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true"><span></span><span></span><span></span></label>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="attacks.html">Attacks</a></li>
+        <li><a href="countermeasures.html">Countermeasures</a></li>
+        <li><a href="threats.html">Threats</a></li>
+        <li><a href="best-practices.html">Best Practices</a></li>
+        <li><a href="incident-response.html" aria-current="page">Incident Response</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="page-header" aria-labelledby="page-title">
+      <div class="container">
+        <span class="eyebrow">When something goes wrong</span>
+        <h1 id="page-title"><span class="gradient-text">Incident Response</span></h1>
+        <p>If you suspect a cyberattack, a calm and structured response limits damage and speeds recovery. Follow these six phases, adapted from widely used incident handling frameworks.</p>
+      </div>
+    </section>
+
+    <!-- ===== Six-step process ===== -->
+    <section class="section" aria-labelledby="steps-title">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">The process</span>
+          <h2 id="steps-title">Six steps of incident response</h2>
+        </div>
+        <ol class="timeline">
+
+          <li>
+            <article class="card step-card">
+              <div class="step-number" aria-hidden="true">1</div>
+              <span class="phase">Phase 01</span>
+              <h3>Detect</h3>
+              <p>Notice that something is wrong through alerts, monitoring, or a user report.</p>
+              <ul>
+                <li>Review security alerts and logs</li>
+                <li>Encourage fast, blame-free reporting</li>
+                <li>Record the time and what was observed</li>
+              </ul>
+            </article>
+          </li>
+
+          <li>
+            <article class="card step-card">
+              <div class="step-number" aria-hidden="true">2</div>
+              <span class="phase">Phase 02</span>
+              <h3>Identify</h3>
+              <p>Confirm whether it is a real incident and understand its scope and severity.</p>
+              <ul>
+                <li>Determine affected systems, accounts and data</li>
+                <li>Classify severity and assign an owner</li>
+                <li>Preserve evidence and keep notes</li>
+              </ul>
+            </article>
+          </li>
+
+          <li>
+            <article class="card step-card">
+              <div class="step-number" aria-hidden="true">3</div>
+              <span class="phase">Phase 03</span>
+              <h3>Contain</h3>
+              <p>Stop the problem from spreading while preserving evidence.</p>
+              <ul>
+                <li>Isolate affected devices from the network</li>
+                <li>Disable compromised accounts</li>
+                <li>Do not wipe systems before evidence is captured</li>
+              </ul>
+            </article>
+          </li>
+
+          <li>
+            <article class="card step-card">
+              <div class="step-number" aria-hidden="true">4</div>
+              <span class="phase">Phase 04</span>
+              <h3>Eradicate</h3>
+              <p>Remove the cause of the incident and close the way in.</p>
+              <ul>
+                <li>Remove malicious software or unauthorized access</li>
+                <li>Patch the exploited weakness</li>
+                <li>Reset credentials that may be exposed</li>
+              </ul>
+            </article>
+          </li>
+
+          <li>
+            <article class="card step-card">
+              <div class="step-number" aria-hidden="true">5</div>
+              <span class="phase">Phase 05</span>
+              <h3>Recover</h3>
+              <p>Safely restore normal operations and confirm systems are clean.</p>
+              <ul>
+                <li>Restore from verified, clean backups</li>
+                <li>Bring systems back in stages</li>
+                <li>Monitor closely for signs of repeat activity</li>
+              </ul>
+            </article>
+          </li>
+
+          <li>
+            <article class="card step-card">
+              <div class="step-number" aria-hidden="true">6</div>
+              <span class="phase">Phase 06</span>
+              <h3>Review</h3>
+              <p>Learn from the incident so it is less likely, or less damaging, next time.</p>
+              <ul>
+                <li>Hold a lessons-learned meeting</li>
+                <li>Update plans, controls and training</li>
+                <li>Meet any legal or reporting obligations</li>
+              </ul>
+            </article>
+          </li>
+
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===== Emergency checklist ===== -->
+    <section class="section section-alt" aria-labelledby="emergency-title">
+      <div class="container two-col">
+        <div>
+          <span class="eyebrow">First response</span>
+          <h2 id="emergency-title">Emergency response checklist</h2>
+          <p>If you suspect an attack right now, work through these immediate actions. Tick them off as you go.</p>
+          <div class="callout callout-warn">
+            <div class="callout-icon" aria-hidden="true">⚠️</div>
+            <p>In a workplace, follow your organization's own procedure and contact your IT or security team first. Do not try to handle a serious incident alone.</p>
+          </div>
+        </div>
+
+        <form class="card" aria-label="Emergency response checklist">
+          <fieldset class="plain-fieldset">
+            <legend class="sr-only">Emergency response checklist</legend>
+            <ul class="checklist">
+              <li><label class="check-item"><input type="checkbox"> Stay calm and write down what you noticed and when</label></li>
+              <li><label class="check-item"><input type="checkbox"> Disconnect the affected device from Wi-Fi and cables (don't power off if advised to preserve evidence)</label></li>
+              <li><label class="check-item"><input type="checkbox"> Report it to your IT or security team immediately</label></li>
+              <li><label class="check-item"><input type="checkbox"> Change passwords from a different, clean device</label></li>
+              <li><label class="check-item"><input type="checkbox"> Enable or review MFA on important accounts</label></li>
+              <li><label class="check-item"><input type="checkbox"> Notify your bank if financial details may be exposed</label></li>
+              <li><label class="check-item"><input type="checkbox"> Preserve logs, screenshots and suspicious messages</label></li>
+              <li><label class="check-item"><input type="checkbox"> Do not pay a ransom or reply to the attacker without expert advice</label></li>
+              <li><label class="check-item"><input type="checkbox"> Check backups are intact before attempting to restore</label></li>
+              <li><label class="check-item"><input type="checkbox"> Report to the relevant authorities where required</label></li>
+            </ul>
+          </fieldset>
+        </form>
+      </div>
+    </section>
+
+    <!-- ===== Why have a plan ===== -->
+    <section class="section" aria-labelledby="plan-title">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Be prepared</span>
+          <h2 id="plan-title">Why organizations need an incident response plan</h2>
+          <p>Incidents are stressful and time-critical. Deciding roles and steps in advance means people can act quickly instead of improvising.</p>
+        </div>
+        <div class="grid grid-4">
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">⏱️</div>
+            <h3>Faster response</h3>
+            <p>Clear steps reduce confusion and shorten the time an attacker stays active.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">📉</div>
+            <h3>Less damage</h3>
+            <p>Quick containment limits financial loss, downtime and data exposure.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">⚖️</div>
+            <h3>Compliance</h3>
+            <p>Many laws and regulations require timely breach notification and documented procedures.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">🤝</div>
+            <h3>Trust</h3>
+            <p>A confident, transparent response protects customer and public confidence.</p>
+          </article>
+        </div>
+        <p class="source-note">A good plan names responsible people, contact lists, communication templates and escalation paths, and it is practiced through regular exercises.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="index.html">CyberShield Academy</a>
+          <p>An educational website about cybersecurity attacks and countermeasures. Content explains threats conceptually and focuses on detection, prevention, mitigation and recovery.</p>
+        </div>
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <h2>Explore</h2>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="attacks.html">Attacks</a></li>
+            <li><a href="countermeasures.html">Countermeasures</a></li>
+            <li><a href="threats.html">Threats</a></li>
+            <li><a href="best-practices.html">Best Practices</a></li>
+            <li><a href="incident-response.html">Incident Response</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 CyberShield Academy. All rights reserved.</p>
+        <p class="edu-only">For educational and defensive purposes only.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

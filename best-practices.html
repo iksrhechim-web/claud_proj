@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Practical cybersecurity best practices for individuals, students, small businesses and large organizations, with an interactive checklist.">
+  <meta name="theme-color" content="#040813">
+  <title>Security Best Practices | CyberShield Academy</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="container nav" aria-label="Main navigation">
+      <a class="brand" href="index.html" aria-label="CyberShield Academy – home">
+        <svg class="brand-mark" viewBox="0 0 48 48" role="img" aria-label="CyberShield logo: a shield with a padlock">
+          <defs>
+            <linearGradient id="lg-bp" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#00e5ff"/>
+              <stop offset="1" stop-color="#2f8bff"/>
+            </linearGradient>
+          </defs>
+          <path d="M24 3 42 9v14c0 11-7.500 18.500-18 22C13.500 41.500 6 34 6 23V9z" fill="url(#lg-bp)"/>
+          <path d="M24 8 37 12.500V23c0 8.200-5.300 14-13 17-7.700-3-13-8.800-13-17V12.500z" fill="#06101c"/>
+          <rect x="17" y="22" width="14" height="11" rx="2" fill="#00e5ff"/>
+          <path d="M20 22v-3.500a4 4 0 0 1 8 0V22" fill="none" stroke="#00e5ff" stroke-width="2.500"/>
+        </svg>
+        <span>Cyber<em>Shield</em></span>
+      </a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu">
+      <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true"><span></span><span></span><span></span></label>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="attacks.html">Attacks</a></li>
+        <li><a href="countermeasures.html">Countermeasures</a></li>
+        <li><a href="threats.html">Threats</a></li>
+        <li><a href="best-practices.html" aria-current="page">Best Practices</a></li>
+        <li><a href="incident-response.html">Incident Response</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="page-header" aria-labelledby="page-title">
+      <div class="container">
+        <span class="eyebrow">Practical guidance</span>
+        <h1 id="page-title"><span class="gradient-text">Security Best Practices</span></h1>
+        <p>Good security is built from consistent habits. Find recommendations for your situation, then work through the checklist to see how well protected you are.</p>
+      </div>
+    </section>
+
+    <!-- ===== Recommendations by audience ===== -->
+    <section class="section" aria-labelledby="audience-title">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Tailored advice</span>
+          <h2 id="audience-title">Recommendations by audience</h2>
+        </div>
+        <div class="grid grid-2">
+
+          <article class="card audience-card">
+            <h3><span aria-hidden="true">👤</span> Individuals</h3>
+            <ul>
+              <li>Use a password manager and unique passwords for every account.</li>
+              <li>Turn on MFA for email, banking and social media.</li>
+              <li>Install updates promptly on phones, computers and smart devices.</li>
+              <li>Be skeptical of unexpected messages, even from known contacts.</li>
+              <li>Review privacy settings and limit what you share publicly.</li>
+            </ul>
+          </article>
+
+          <article class="card audience-card">
+            <h3><span aria-hidden="true">🎓</span> Students</h3>
+            <ul>
+              <li>Protect school and university accounts with MFA, since they are valuable targets.</li>
+              <li>Avoid pirated software and unofficial downloads, which commonly carry malware.</li>
+              <li>Use a VPN or mobile data instead of open Wi-Fi for sensitive tasks.</li>
+              <li>Lock shared and library computers, and log out when finished.</li>
+              <li>Back up coursework to cloud storage and an external drive.</li>
+            </ul>
+          </article>
+
+          <article class="card audience-card">
+            <h3><span aria-hidden="true">🏪</span> Small Businesses</h3>
+            <ul>
+              <li>Enforce MFA and unique passwords across all staff accounts.</li>
+              <li>Keep automatic updates on and maintain a simple asset list.</li>
+              <li>Back up critical data using the 3-2-1 rule and test restores.</li>
+              <li>Train employees to spot phishing and invoice fraud.</li>
+              <li>Limit admin rights and remove accounts of departed staff immediately.</li>
+            </ul>
+          </article>
+
+          <article class="card audience-card">
+            <h3><span aria-hidden="true">🏢</span> Large Organizations</h3>
+            <ul>
+              <li>Adopt a recognized framework such as NIST CSF or ISO 27001.</li>
+              <li>Implement zero-trust principles and strong identity management.</li>
+              <li>Run continuous monitoring with a security operations capability.</li>
+              <li>Conduct regular risk assessments, audits and incident drills.</li>
+              <li>Manage third-party and supply-chain risk.</li>
+            </ul>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Topic sections ===== -->
+    <section class="section section-alt" aria-labelledby="topics-title">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Core topics</span>
+          <h2 id="topics-title">Essential security areas</h2>
+        </div>
+        <div class="grid grid-3">
+
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">🔑</div>
+            <h3>Password Security</h3>
+            <ul>
+              <li>Choose long passphrases rather than complex short ones.</li>
+              <li>Never share passwords or reuse them.</li>
+              <li>Change a password immediately if a service reports a breach.</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">✉️</div>
+            <h3>Email Safety</h3>
+            <ul>
+              <li>Check the sender address and hover over links before clicking.</li>
+              <li>Don't open unexpected attachments.</li>
+              <li>Verify unusual requests through a separate, trusted channel.</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">💻</div>
+            <h3>Device Security</h3>
+            <ul>
+              <li>Enable screen locks and full-disk encryption.</li>
+              <li>Keep operating systems and apps updated.</li>
+              <li>Install software only from trusted sources.</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">📶</div>
+            <h3>Network Security</h3>
+            <ul>
+              <li>Secure home Wi-Fi with WPA3 or WPA2 and a strong passphrase.</li>
+              <li>Change default router credentials.</li>
+              <li>Avoid sensitive activity on open public networks.</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">🗂️</div>
+            <h3>Data Protection</h3>
+            <ul>
+              <li>Collect and keep only the data you need.</li>
+              <li>Encrypt sensitive files and backups.</li>
+              <li>Dispose of old devices and media securely.</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">🚨</div>
+            <h3>Be Ready to Respond</h3>
+            <ul>
+              <li>Know who to contact if something looks wrong.</li>
+              <li>Keep important contacts and recovery codes accessible offline.</li>
+              <li>Read the <a href="incident-response.html">Incident Response</a> guide.</li>
+            </ul>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Interactive-feeling checklist (native checkboxes, no backend) ===== -->
+    <section class="section" aria-labelledby="checklist-title">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Self-assessment</span>
+          <h2 id="checklist-title">Cybersecurity checklist</h2>
+          <p>Tick off what you already do. Anything left unchecked is a good next step. Your selections are only for your own use on this page.</p>
+        </div>
+
+        <form class="grid grid-2" aria-label="Cybersecurity checklist">
+          <fieldset class="card">
+            <legend class="sr-only">Passwords and accounts</legend>
+            <h3>Passwords &amp; Accounts</h3>
+            <ul class="checklist">
+              <li><label class="check-item"><input type="checkbox"> I use a password manager</label></li>
+              <li><label class="check-item"><input type="checkbox"> Every account has a unique password</label></li>
+              <li><label class="check-item"><input type="checkbox"> MFA is enabled on email and banking</label></li>
+              <li><label class="check-item"><input type="checkbox"> I've saved account recovery codes safely</label></li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="card">
+            <legend class="sr-only">Email and messaging</legend>
+            <h3>Email &amp; Messaging</h3>
+            <ul class="checklist">
+              <li><label class="check-item"><input type="checkbox"> I check senders and links before clicking</label></li>
+              <li><label class="check-item"><input type="checkbox"> I verify unusual requests another way</label></li>
+              <li><label class="check-item"><input type="checkbox"> I know how to report phishing</label></li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="card">
+            <legend class="sr-only">Devices</legend>
+            <h3>Devices</h3>
+            <ul class="checklist">
+              <li><label class="check-item"><input type="checkbox"> Automatic updates are turned on</label></li>
+              <li><label class="check-item"><input type="checkbox"> Screen lock and disk encryption are enabled</label></li>
+              <li><label class="check-item"><input type="checkbox"> Antivirus / endpoint protection is active</label></li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="card">
+            <legend class="sr-only">Network</legend>
+            <h3>Network</h3>
+            <ul class="checklist">
+              <li><label class="check-item"><input type="checkbox"> Router default password has been changed</label></li>
+              <li><label class="check-item"><input type="checkbox"> Wi-Fi uses WPA2 or WPA3</label></li>
+              <li><label class="check-item"><input type="checkbox"> I avoid sensitive tasks on public Wi-Fi</label></li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="card">
+            <legend class="sr-only">Data protection</legend>
+            <h3>Data Protection</h3>
+            <ul class="checklist">
+              <li><label class="check-item"><input type="checkbox"> Important files are backed up (3-2-1)</label></li>
+              <li><label class="check-item"><input type="checkbox"> I've tested restoring a backup</label></li>
+              <li><label class="check-item"><input type="checkbox"> Sensitive files are encrypted</label></li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="card">
+            <legend class="sr-only">Awareness</legend>
+            <h3>Awareness</h3>
+            <ul class="checklist">
+              <li><label class="check-item"><input type="checkbox"> I review privacy settings regularly</label></li>
+              <li><label class="check-item"><input type="checkbox"> I keep learning about current scams</label></li>
+              <li><label class="check-item"><input type="checkbox"> I know what to do if I suspect an attack</label></li>
+            </ul>
+          </fieldset>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="index.html">CyberShield Academy</a>
+          <p>An educational website about cybersecurity attacks and countermeasures. Content explains threats conceptually and focuses on detection, prevention, mitigation and recovery.</p>
+        </div>
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <h2>Explore</h2>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="attacks.html">Attacks</a></li>
+            <li><a href="countermeasures.html">Countermeasures</a></li>
+            <li><a href="threats.html">Threats</a></li>
+            <li><a href="best-practices.html">Best Practices</a></li>
+            <li><a href="incident-response.html">Incident Response</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 CyberShield Academy. All rights reserved.</p>
+        <p class="edu-only">For educational and defensive purposes only.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

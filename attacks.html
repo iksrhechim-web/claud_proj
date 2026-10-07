@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn how common cyberattacks work at a conceptual level, their impact, and the warning signs to look for.">
+  <meta name="theme-color" content="#040813">
+  <title>Cybersecurity Attacks | CyberShield Academy</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="container nav" aria-label="Main navigation">
+      <a class="brand" href="index.html" aria-label="CyberShield Academy – home">
+        <svg class="brand-mark" viewBox="0 0 48 48" role="img" aria-label="CyberShield logo: a shield with a padlock">
+          <defs>
+            <linearGradient id="lg-attacks" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#00e5ff"/>
+              <stop offset="1" stop-color="#2f8bff"/>
+            </linearGradient>
+          </defs>
+          <path d="M24 3 42 9v14c0 11-7.500 18.500-18 22C13.500 41.500 6 34 6 23V9z" fill="url(#lg-attacks)"/>
+          <path d="M24 8 37 12.500V23c0 8.200-5.300 14-13 17-7.700-3-13-8.800-13-17V12.500z" fill="#06101c"/>
+          <rect x="17" y="22" width="14" height="11" rx="2" fill="#00e5ff"/>
+          <path d="M20 22v-3.500a4 4 0 0 1 8 0V22" fill="none" stroke="#00e5ff" stroke-width="2.500"/>
+        </svg>
+        <span>Cyber<em>Shield</em></span>
+      </a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu">
+      <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true"><span></span><span></span><span></span></label>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="attacks.html" aria-current="page">Attacks</a></li>
+        <li><a href="countermeasures.html">Countermeasures</a></li>
+        <li><a href="threats.html">Threats</a></li>
+        <li><a href="best-practices.html">Best Practices</a></li>
+        <li><a href="incident-response.html">Incident Response</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="page-header" aria-labelledby="page-title">
+      <div class="container">
+        <span class="eyebrow">Threat knowledge</span>
+        <h1 id="page-title"><span class="gradient-text">Cybersecurity Attacks</span></h1>
+        <p>Understanding how attacks work in general terms helps you recognize them early. Each card below explains the concept, impact and warning signs. No attack instructions are provided, because the goal is defense.</p>
+        <nav class="jump-nav" aria-label="Jump to an attack type">
+          <a href="#phishing">Phishing</a>
+          <a href="#malware">Malware</a>
+          <a href="#ransomware">Ransomware</a>
+          <a href="#ddos">DDoS</a>
+          <a href="#sql-injection">SQL Injection</a>
+          <a href="#mitm">MITM</a>
+          <a href="#brute-force">Brute Force</a>
+          <a href="#social-engineering">Social Engineering</a>
+          <a href="#zero-day">Zero-Day</a>
+        </nav>
+      </div>
+    </section>
+
+    <section class="section" aria-label="Attack types">
+      <div class="container grid grid-2">
+
+        <article class="card attack-card" id="phishing">
+          <h3><span aria-hidden="true">🎣</span> Phishing</h3>
+          <span class="tag tag-amber">Human-targeted</span><span class="tag">Email / SMS / Voice</span>
+          <dl>
+            <dt>Description</dt>
+            <dd>Deceptive messages that pretend to come from a trusted organization or person in order to trick recipients into revealing information or taking a harmful action.</dd>
+            <dt>How it generally works</dt>
+            <dd>The message creates urgency or fear, such as a "locked account" or "unpaid invoice", and directs the recipient to a look-alike page, an attachment or a reply. Targeted versions (spear phishing) use personal details to seem more convincing.</dd>
+            <dt>Potential impact</dt>
+            <dd class="impact">Stolen account credentials, financial fraud, malware infections and a foothold for larger breaches.</dd>
+            <dt>Warning signs</dt>
+            <dd class="warning">Unexpected requests, pressure to act immediately, mismatched sender addresses or link destinations, generic greetings, spelling errors and unusual attachments.</dd>
+          </dl>
+        </article>
+
+        <article class="card attack-card" id="malware">
+          <h3><span aria-hidden="true">🦠</span> Malware</h3>
+          <span class="tag tag-red">Software-based</span><span class="tag">Viruses / Trojans / Spyware</span>
+          <dl>
+            <dt>Description</dt>
+            <dd>Malicious software designed to damage systems, spy on activity, or give unauthorized parties access to a device or network.</dd>
+            <dt>How it generally works</dt>
+            <dd>Malware typically arrives through infected downloads, email attachments, compromised websites or removable media, then runs quietly in the background, often trying to persist after a restart.</dd>
+            <dt>Potential impact</dt>
+            <dd class="impact">Data theft, loss of privacy, degraded performance, system damage and use of the device in larger criminal operations.</dd>
+            <dt>Warning signs</dt>
+            <dd class="warning">Sluggish performance, unexpected pop-ups, unknown programs, disabled security tools, unusual network activity and browser settings that change on their own.</dd>
+          </dl>
+        </article>
+
+        <article class="card attack-card" id="ransomware">
+          <h3><span aria-hidden="true">🔒</span> Ransomware</h3>
+          <span class="tag tag-red">Extortion</span><span class="tag">Data encryption</span>
+          <dl>
+            <dt>Description</dt>
+            <dd>A type of malware that locks files or systems, and sometimes steals data, then demands payment to restore access or prevent publication.</dd>
+            <dt>How it generally works</dt>
+            <dd>After gaining access through phishing, exposed remote services or unpatched software, attackers spread within a network and then trigger the lock-out across as many systems as possible.</dd>
+            <dt>Potential impact</dt>
+            <dd class="impact">Operational shutdown, permanent data loss without backups, regulatory penalties, recovery costs and reputational harm.</dd>
+            <dt>Warning signs</dt>
+            <dd class="warning">Files that cannot be opened or have unfamiliar extensions, ransom notes, sudden mass file changes, and security tools or backups being disabled.</dd>
+          </dl>
+        </article>
+
+        <article class="card attack-card" id="ddos">
+          <h3><span aria-hidden="true">🌊</span> DDoS (Distributed Denial of Service)</h3>
+          <span class="tag tag-amber">Availability</span><span class="tag">Network / Application layer</span>
+          <dl>
+            <dt>Description</dt>
+            <dd>An attempt to make a website, application or network unavailable by overwhelming it with traffic from many sources at once.</dd>
+            <dt>How it generally works</dt>
+            <dd>A large number of compromised or coordinated devices send more requests than the target can handle, so legitimate users cannot get through.</dd>
+            <dt>Potential impact</dt>
+            <dd class="impact">Service downtime, lost revenue, customer frustration and diverted attention that may mask other attacks.</dd>
+            <dt>Warning signs</dt>
+            <dd class="warning">Sudden traffic spikes from unusual locations, extremely slow or unreachable services, and repeated identical requests in logs.</dd>
+          </dl>
+        </article>
+
+        <article class="card attack-card" id="sql-injection">
+          <h3><span aria-hidden="true">🗄️</span> SQL Injection</h3>
+          <span class="tag tag-red">Application flaw</span><span class="tag">Databases</span>
+          <dl>
+            <dt>Description</dt>
+            <dd>A weakness in web applications where untrusted user input is handled unsafely by a database, allowing it to be interpreted as part of a database command.</dd>
+            <dt>How it generally works</dt>
+            <dd>The risk appears when an application mixes user-supplied text directly with database queries without proper validation. Secure coding practices remove this class of flaw entirely.</dd>
+            <dt>Potential impact</dt>
+            <dd class="impact">Exposure or alteration of stored data, such as customer records, and potential loss of trust and legal consequences.</dd>
+            <dt>Warning signs</dt>
+            <dd class="warning">Unusual database errors, unexpected query patterns in logs, spikes in failed requests to input forms, and unexplained data changes.</dd>
+          </dl>
+        </article>
+
+        <article class="card attack-card" id="mitm">
+          <h3><span aria-hidden="true">🕵️</span> Man-in-the-Middle (MITM)</h3>
+          <span class="tag tag-amber">Interception</span><span class="tag">Network</span>
+          <dl>
+            <dt>Description</dt>
+            <dd>An attack where a third party secretly positions itself between two communicating parties to observe or alter the exchange.</dd>
+            <dt>How it generally works</dt>
+            <dd>It is most feasible on unprotected or untrusted networks, such as open public Wi-Fi, where traffic is not properly encrypted or identities are not verified.</dd>
+            <dt>Potential impact</dt>
+            <dd class="impact">Exposure of private messages, session hijacking and tampering with transactions.</dd>
+            <dt>Warning signs</dt>
+            <dd class="warning">Browser certificate warnings, unexpected disconnections, unfamiliar networks with names similar to trusted ones, and pages not using HTTPS.</dd>
+          </dl>
+        </article>
+
+        <article class="card attack-card" id="brute-force">
+          <h3><span aria-hidden="true">🔑</span> Brute Force</h3>
+          <span class="tag tag-amber">Credential-based</span><span class="tag">Guessing</span>
+          <dl>
+            <dt>Description</dt>
+            <dd>Repeated, automated guessing of passwords or keys until a correct one is found.</dd>
+            <dt>How it generally works</dt>
+            <dd>Success depends on weak, short or reused passwords and on systems that allow unlimited login attempts. Strong unique passwords and lockout controls make it impractical.</dd>
+            <dt>Potential impact</dt>
+            <dd class="impact">Unauthorized account access, data exposure and lateral movement to other services.</dd>
+            <dt>Warning signs</dt>
+            <dd class="warning">Large numbers of failed logins, attempts from many IP addresses, account lockouts and logins at unusual times.</dd>
+          </dl>
+        </article>
+
+        <article class="card attack-card" id="social-engineering">
+          <h3><span aria-hidden="true">🎭</span> Social Engineering</h3>
+          <span class="tag tag-amber">Human-targeted</span><span class="tag">Manipulation</span>
+          <dl>
+            <dt>Description</dt>
+            <dd>Psychological manipulation that persuades people to break normal security procedures or share confidential information.</dd>
+            <dt>How it generally works</dt>
+            <dd>Attackers pose as colleagues, support staff or authorities, using trust, authority, curiosity or urgency. It can occur by phone, in person, online or through messaging apps.</dd>
+            <dt>Potential impact</dt>
+            <dd class="impact">Unauthorized access, fraudulent payments, disclosure of confidential data and compromised accounts.</dd>
+            <dt>Warning signs</dt>
+            <dd class="warning">Unsolicited requests for passwords or codes, pressure to bypass procedure, claims of authority that cannot be verified, and too-good-to-be-true offers.</dd>
+          </dl>
+        </article>
+
+        <article class="card attack-card" id="zero-day">
+          <h3><span aria-hidden="true">⏳</span> Zero-Day Attacks</h3>
+          <span class="tag tag-red">Unknown flaw</span><span class="tag">Software vulnerabilities</span>
+          <dl>
+            <dt>Description</dt>
+            <dd>Attacks that take advantage of a software vulnerability unknown to the vendor, so no official fix exists when the attack begins.</dd>
+            <dt>How it generally works</dt>
+            <dd>Because the flaw is undisclosed, standard signature-based defenses may not recognize it. Once discovered, vendors race to release patches and defenders to apply them.</dd>
+            <dt>Potential impact</dt>
+            <dd class="impact">Compromise of fully updated systems, targeted espionage or disruption before defenses are available.</dd>
+            <dt>Warning signs</dt>
+            <dd class="warning">Unexpected crashes, abnormal system behavior, unusual outbound connections, and alerts from behavior-based detection tools.</dd>
+          </dl>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="section" aria-label="Defensive note">
+      <div class="container">
+        <div class="callout">
+          <div class="callout-icon" aria-hidden="true">🛡️</div>
+          <div>
+            <h2>What's next?</h2>
+            <p>Knowing the threat is half the battle. Visit the <a href="countermeasures.html">Countermeasures</a> page to see which defenses stop each attack type, or review the <a href="incident-response.html">Incident Response</a> guide to learn what to do if you suspect an attack.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="index.html">CyberShield Academy</a>
+          <p>An educational website about cybersecurity attacks and countermeasures. Content explains threats conceptually and focuses on detection, prevention, mitigation and recovery.</p>
+        </div>
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <h2>Explore</h2>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="attacks.html">Attacks</a></li>
+            <li><a href="countermeasures.html">Countermeasures</a></li>
+            <li><a href="threats.html">Threats</a></li>
+            <li><a href="best-practices.html">Best Practices</a></li>
+            <li><a href="incident-response.html">Incident Response</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 CyberShield Academy. All rights reserved.</p>
+        <p class="edu-only">For educational and defensive purposes only.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

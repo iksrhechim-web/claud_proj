@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Understand the cybersecurity threat landscape, major threat actors, an illustrative threat level dashboard, and how organizations assess risk.">
+  <meta name="theme-color" content="#040813">
+  <title>Threat Landscape | CyberShield Academy</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="container nav" aria-label="Main navigation">
+      <a class="brand" href="index.html" aria-label="CyberShield Academy – home">
+        <svg class="brand-mark" viewBox="0 0 48 48" role="img" aria-label="CyberShield logo: a shield with a padlock">
+          <defs>
+            <linearGradient id="lg-threats" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#00e5ff"/>
+              <stop offset="1" stop-color="#2f8bff"/>
+            </linearGradient>
+          </defs>
+          <path d="M24 3 42 9v14c0 11-7.500 18.500-18 22C13.500 41.500 6 34 6 23V9z" fill="url(#lg-threats)"/>
+          <path d="M24 8 37 12.500V23c0 8.200-5.300 14-13 17-7.700-3-13-8.800-13-17V12.500z" fill="#06101c"/>
+          <rect x="17" y="22" width="14" height="11" rx="2" fill="#00e5ff"/>
+          <path d="M20 22v-3.500a4 4 0 0 1 8 0V22" fill="none" stroke="#00e5ff" stroke-width="2.500"/>
+        </svg>
+        <span>Cyber<em>Shield</em></span>
+      </a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu">
+      <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true"><span></span><span></span><span></span></label>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="attacks.html">Attacks</a></li>
+        <li><a href="countermeasures.html">Countermeasures</a></li>
+        <li><a href="threats.html" aria-current="page">Threats</a></li>
+        <li><a href="best-practices.html">Best Practices</a></li>
+        <li><a href="incident-response.html">Incident Response</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="page-header" aria-labelledby="page-title">
+      <div class="container">
+        <span class="eyebrow">Know your adversary</span>
+        <h1 id="page-title"><span class="gradient-text">Threat Landscape</span></h1>
+        <p>Threats come from many sources with different motives, skills and resources. Understanding who might target you, and why, helps you choose the right defenses.</p>
+      </div>
+    </section>
+
+    <!-- ===== Threat actors ===== -->
+    <section class="section" aria-labelledby="actors-title">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Threat actors</span>
+          <h2 id="actors-title">Who poses a threat?</h2>
+        </div>
+        <div class="grid grid-3">
+
+          <article class="card threat-actor">
+            <h3><span aria-hidden="true">💰</span> Cybercriminals</h3>
+            <p>Individuals or organized groups motivated mainly by financial gain. They run fraud, ransomware and data-theft operations, often at large scale and opportunistically.</p>
+            <p class="meta"><strong>Typical motive:</strong> Profit<br><strong>Common methods:</strong> Phishing, ransomware, credential theft</p>
+          </article>
+
+          <article class="card threat-actor">
+            <h3><span aria-hidden="true">🧑‍💼</span> Insider Threats</h3>
+            <p>Current or former employees, contractors or partners who misuse legitimate access, either deliberately or accidentally. Accidental mistakes are far more common than malicious intent.</p>
+            <p class="meta"><strong>Typical motive:</strong> Grievance, gain, or simple error<br><strong>Key defense:</strong> Least privilege and monitoring</p>
+          </article>
+
+          <article class="card threat-actor">
+            <h3><span aria-hidden="true">🏛️</span> Nation-State Threats</h3>
+            <p>Government-backed groups with substantial resources and patience. They pursue espionage, strategic advantage or disruption of critical infrastructure.</p>
+            <p class="meta"><strong>Typical motive:</strong> Espionage, geopolitical objectives<br><strong>Characteristic:</strong> Advanced, persistent, well funded</p>
+          </article>
+
+          <article class="card threat-actor">
+            <h3><span aria-hidden="true">📢</span> Hacktivists</h3>
+            <p>Actors driven by political or social causes who aim to draw attention, embarrass organizations or disrupt services, for example through defacement or service-disruption campaigns.</p>
+            <p class="meta"><strong>Typical motive:</strong> Ideology or protest<br><strong>Common effects:</strong> Outages, defacement, data leaks</p>
+          </article>
+
+          <article class="card threat-actor">
+            <h3><span aria-hidden="true">🕸️</span> Botnets</h3>
+            <p>Networks of compromised devices, from computers to smart-home gadgets, controlled remotely without owners' knowledge. They are rented or used for spam, fraud and large-scale traffic floods.</p>
+            <p class="meta"><strong>Typical use:</strong> DDoS, spam, credential attacks<br><strong>Key defense:</strong> Patched, securely configured devices</p>
+          </article>
+
+          <article class="card threat-actor">
+            <h3><span aria-hidden="true">🧭</span> Why it matters</h3>
+            <p>Different actors call for different priorities. A small business is mostly exposed to criminals, while a defense contractor must also consider nation-state activity. Know your likely adversaries.</p>
+            <p class="meta"><strong>Takeaway:</strong> Match defenses to realistic threats</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Threat level dashboard (illustrative) ===== -->
+    <section class="section section-alt" aria-labelledby="dashboard-title">
+      <div class="container">
+        <div class="dashboard">
+          <div class="dashboard-head">
+            <h2 id="dashboard-title">Threat Level Dashboard</h2>
+            <span class="live-tag">ILLUSTRATIVE DATA</span>
+          </div>
+
+          <div class="grid grid-2">
+            <div>
+              <div class="meter-row">
+                <div class="meter-label"><span>Phishing &amp; social engineering</span><span>CRITICAL</span></div>
+                <div class="meter" role="img" aria-label="Phishing and social engineering: critical, about 90 percent"><span class="meter-fill fill-critical w-90"></span></div>
+              </div>
+              <div class="meter-row">
+                <div class="meter-label"><span>Ransomware</span><span>CRITICAL</span></div>
+                <div class="meter" role="img" aria-label="Ransomware: critical, about 85 percent"><span class="meter-fill fill-critical w-85"></span></div>
+              </div>
+              <div class="meter-row">
+                <div class="meter-label"><span>Credential theft &amp; brute force</span><span>HIGH</span></div>
+                <div class="meter" role="img" aria-label="Credential attacks: high, about 75 percent"><span class="meter-fill fill-high w-75"></span></div>
+              </div>
+              <div class="meter-row">
+                <div class="meter-label"><span>Malware</span><span>HIGH</span></div>
+                <div class="meter" role="img" aria-label="Malware: high, about 70 percent"><span class="meter-fill fill-high w-70"></span></div>
+              </div>
+            </div>
+            <div>
+              <div class="meter-row">
+                <div class="meter-label"><span>DDoS</span><span>MEDIUM</span></div>
+                <div class="meter" role="img" aria-label="DDoS: medium, about 55 percent"><span class="meter-fill fill-medium w-55"></span></div>
+              </div>
+              <div class="meter-row">
+                <div class="meter-label"><span>Web application flaws</span><span>MEDIUM</span></div>
+                <div class="meter" role="img" aria-label="Web application flaws: medium, about 60 percent"><span class="meter-fill fill-medium w-60"></span></div>
+              </div>
+              <div class="meter-row">
+                <div class="meter-label"><span>Man-in-the-middle</span><span>LOW-MEDIUM</span></div>
+                <div class="meter" role="img" aria-label="Man in the middle: low to medium, about 40 percent"><span class="meter-fill fill-low w-40"></span></div>
+              </div>
+              <div class="meter-row">
+                <div class="meter-label"><span>Zero-day exploits</span><span>LOW (but severe)</span></div>
+                <div class="meter" role="img" aria-label="Zero-day exploits: low likelihood but severe impact, about 30 percent"><span class="meter-fill fill-low w-30"></span></div>
+              </div>
+            </div>
+          </div>
+          <p class="source-note">These levels are an illustrative teaching example of relative likelihood for a typical organization, not real-time or measured data. Your own risk profile will differ.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Risk assessment ===== -->
+    <section class="section" aria-labelledby="risk-title">
+      <div class="container two-col">
+        <div>
+          <span class="eyebrow">Risk management</span>
+          <h2 id="risk-title">How organizations assess cybersecurity risk</h2>
+          <p>Risk is commonly expressed as the combination of how likely an event is and how severe its impact would be. Organizations follow a repeatable cycle:</p>
+          <ol class="process-list">
+            <li><strong>Identify assets</strong> – systems, data and services that matter.</li>
+            <li><strong>Identify threats and vulnerabilities</strong> – what could go wrong and where you are weak.</li>
+            <li><strong>Analyze likelihood and impact</strong> – estimate how probable and how damaging each risk is.</li>
+            <li><strong>Prioritize</strong> – rank risks, often with a risk matrix.</li>
+            <li><strong>Treat the risk</strong> – reduce, transfer (e.g. insurance), accept or avoid it.</li>
+            <li><strong>Monitor and review</strong> – repeat regularly as threats and systems change.</li>
+          </ol>
+        </div>
+
+        <div>
+          <div class="card">
+            <h3>Example risk matrix</h3>
+            <p>Higher likelihood combined with higher impact means higher priority.</p>
+            <div class="risk-grid" role="table" aria-label="Risk matrix of likelihood versus impact">
+              <div class="risk-cell risk-med" role="cell">Medium</div>
+              <div class="risk-cell risk-high" role="cell">High</div>
+              <div class="risk-cell risk-crit" role="cell">Critical</div>
+              <div class="risk-cell risk-low" role="cell">Low</div>
+              <div class="risk-cell risk-med" role="cell">Medium</div>
+              <div class="risk-cell risk-high" role="cell">High</div>
+              <div class="risk-cell risk-low" role="cell">Low</div>
+              <div class="risk-cell risk-low" role="cell">Low</div>
+              <div class="risk-cell risk-med" role="cell">Medium</div>
+            </div>
+            <p class="risk-axis">Rows: likelihood (high at top) &nbsp;|&nbsp; Columns: impact (low to high, left to right)</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="index.html">CyberShield Academy</a>
+          <p>An educational website about cybersecurity attacks and countermeasures. Content explains threats conceptually and focuses on detection, prevention, mitigation and recovery.</p>
+        </div>
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <h2>Explore</h2>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="attacks.html">Attacks</a></li>
+            <li><a href="countermeasures.html">Countermeasures</a></li>
+            <li><a href="threats.html">Threats</a></li>
+            <li><a href="best-practices.html">Best Practices</a></li>
+            <li><a href="incident-response.html">Incident Response</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 CyberShield Academy. All rights reserved.</p>
+        <p class="edu-only">For educational and defensive purposes only.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

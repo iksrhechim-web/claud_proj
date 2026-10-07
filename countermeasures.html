@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Defensive measures against cyberattacks, plus a matrix showing which countermeasures protect against which attack types.">
+  <meta name="theme-color" content="#040813">
+  <title>Countermeasures | CyberShield Academy</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="container nav" aria-label="Main navigation">
+      <a class="brand" href="index.html" aria-label="CyberShield Academy – home">
+        <svg class="brand-mark" viewBox="0 0 48 48" role="img" aria-label="CyberShield logo: a shield with a padlock">
+          <defs>
+            <linearGradient id="lg-counter" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#00e5ff"/>
+              <stop offset="1" stop-color="#2f8bff"/>
+            </linearGradient>
+          </defs>
+          <path d="M24 3 42 9v14c0 11-7.500 18.500-18 22C13.500 41.500 6 34 6 23V9z" fill="url(#lg-counter)"/>
+          <path d="M24 8 37 12.500V23c0 8.200-5.300 14-13 17-7.700-3-13-8.800-13-17V12.500z" fill="#06101c"/>
+          <rect x="17" y="22" width="14" height="11" rx="2" fill="#00e5ff"/>
+          <path d="M20 22v-3.500a4 4 0 0 1 8 0V22" fill="none" stroke="#00e5ff" stroke-width="2.500"/>
+        </svg>
+        <span>Cyber<em>Shield</em></span>
+      </a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu">
+      <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true"><span></span><span></span><span></span></label>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="attacks.html">Attacks</a></li>
+        <li><a href="countermeasures.html" aria-current="page">Countermeasures</a></li>
+        <li><a href="threats.html">Threats</a></li>
+        <li><a href="best-practices.html">Best Practices</a></li>
+        <li><a href="incident-response.html">Incident Response</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="page-header" aria-labelledby="page-title">
+      <div class="container">
+        <span class="eyebrow">Defense in depth</span>
+        <h1 id="page-title"><span class="gradient-text">Countermeasures</span></h1>
+        <p>No single control stops every attack. Effective security layers several defensive measures so that if one fails, others still protect you. Explore the core controls below.</p>
+      </div>
+    </section>
+
+    <section class="section" aria-label="Defensive measures">
+      <div class="container grid grid-3">
+
+        <article class="card">
+          <div class="card-icon" aria-hidden="true">🔑</div>
+          <h3>Strong Passwords</h3>
+          <p>Long, unique passphrases make guessing impractical and limit the damage of a leaked password.</p>
+          <ul>
+            <li>Use 14+ characters or a multi-word passphrase</li>
+            <li>Never reuse passwords across accounts</li>
+            <li>Store them in a reputable password manager</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <div class="card-icon" aria-hidden="true">📱</div>
+          <h3>Multi-Factor Authentication (MFA)</h3>
+          <p>Requires a second proof of identity, so a stolen password alone is not enough to log in.</p>
+          <ul>
+            <li>Prefer authenticator apps or security keys over SMS</li>
+            <li>Enable it first on email, banking and cloud accounts</li>
+            <li>Store backup recovery codes safely</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <div class="card-icon" aria-hidden="true">🧱</div>
+          <h3>Firewalls</h3>
+          <p>Filter network traffic according to rules, blocking unwanted connections and reducing exposure.</p>
+          <ul>
+            <li>Deny by default, allow only what is needed</li>
+            <li>Use web application firewalls for public sites</li>
+            <li>Review rules regularly</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <div class="card-icon" aria-hidden="true">🛡️</div>
+          <h3>Antivirus / Endpoint Protection</h3>
+          <p>Detects and blocks malicious software and suspicious behavior on laptops, phones and servers.</p>
+          <ul>
+            <li>Keep definitions and agents updated</li>
+            <li>Enable real-time and behavior-based scanning</li>
+            <li>Alert on disabled protection</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <div class="card-icon" aria-hidden="true">🔐</div>
+          <h3>Encryption</h3>
+          <p>Scrambles data so it is unreadable without the right key, both stored and in transit.</p>
+          <ul>
+            <li>Use HTTPS and a VPN on untrusted networks</li>
+            <li>Enable full-disk encryption on devices</li>
+            <li>Protect and rotate encryption keys</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <div class="card-icon" aria-hidden="true">🔄</div>
+          <h3>Updates &amp; Patch Management</h3>
+          <p>Installing vendor fixes closes known vulnerabilities before they can be abused.</p>
+          <ul>
+            <li>Enable automatic updates where possible</li>
+            <li>Prioritize critical and actively exploited fixes</li>
+            <li>Keep an inventory of software and devices</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <div class="card-icon" aria-hidden="true">💾</div>
+          <h3>Secure Backups</h3>
+          <p>Reliable backups let you restore data after ransomware, hardware failure or accidental deletion.</p>
+          <ul>
+            <li>Follow the 3-2-1 rule: 3 copies, 2 media, 1 offsite</li>
+            <li>Keep at least one offline or immutable copy</li>
+            <li>Test restores regularly</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <div class="card-icon" aria-hidden="true">📡</div>
+          <h3>Network Monitoring</h3>
+          <p>Continuous visibility into logs and traffic reveals unusual behavior early, shortening response time.</p>
+          <ul>
+            <li>Centralize logs for analysis</li>
+            <li>Alert on anomalies and failed logins</li>
+            <li>Use intrusion detection systems</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <div class="card-icon" aria-hidden="true">🎓</div>
+          <h3>Security Awareness Training</h3>
+          <p>Helps people recognize phishing and manipulation, turning users into an active line of defense.</p>
+          <ul>
+            <li>Train regularly, not just once</li>
+            <li>Run safe phishing simulations</li>
+            <li>Make reporting easy and blame-free</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <div class="card-icon" aria-hidden="true">🚪</div>
+          <h3>Access Control</h3>
+          <p>Limits who can reach which systems and data, containing the impact of any compromised account.</p>
+          <ul>
+            <li>Apply least privilege</li>
+            <li>Remove access promptly when roles change</li>
+            <li>Separate admin and everyday accounts</li>
+          </ul>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ===== Protection matrix ===== -->
+    <section class="section section-alt" aria-labelledby="matrix-title">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Mapping defenses</span>
+          <h2 id="matrix-title">Which countermeasures help against which attacks?</h2>
+          <p>This overview shows where each control provides the strongest benefit. It is a simplified guide: real protection comes from combining several layers.</p>
+        </div>
+
+        <div class="table-wrap">
+          <table class="matrix">
+            <caption>Protection matrix: ✓ = strong protection, ~ = partial or supporting protection, – = not a primary control.</caption>
+            <thead>
+              <tr>
+                <th scope="col">Countermeasure</th>
+                <th scope="col">Phishing</th>
+                <th scope="col">Malware</th>
+                <th scope="col">Ransomware</th>
+                <th scope="col">DDoS</th>
+                <th scope="col">SQL Injection</th>
+                <th scope="col">MITM</th>
+                <th scope="col">Brute Force</th>
+                <th scope="col">Social Eng.</th>
+                <th scope="col">Zero-Day</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Strong passwords</th>
+                <td><span class="cell-partial">~<span class="sr-only">Partial</span></span></td>
+                <td><span class="cell-none">–<span class="sr-only">Not primary</span></span></td>
+                <td><span class="cell-none">–<span class="sr-only">Not primary</span></span></td>
+                <td><span class="cell-none">–<span class="sr-only">Not primary</span></span></td>
+                <td><span class="cell-none">–<span class="sr-only">Not primary</span></span></td>
+                <td><span class="cell-none">–<span class="sr-only">Not primary</span></span></td>
+                <td><span class="cell-strong">✓<span class="sr-only">Strong</span></span></td>
+                <td><span class="cell-partial">~<span class="sr-only">Partial</span></span></td>
+                <td><span class="cell-none">–<span class="sr-only">Not primary</span></span></td>
+              </tr>
+              <tr>
+                <th scope="row">Multi-factor authentication</th>
+                <td><span class="cell-strong">✓<span class="sr-only">Strong</span></span></td>
+                <td><span class="cell-none">–<span class="sr-only">Not primary</span></span></td>
+                <td><span class="cell-partial">~<span class="sr-only">Partial</span></span></td>
+                <td><span class="cell-none">–<span class="sr-only">Not primary</span></span></td>
+                <td><span class="cell-none">–<span class="sr-only">Not primary</span></span></td>
+                <td><span class="cell-partial">~<span class="sr-only">Partial</span></span></td>
+                <td><span class="cell-strong">✓<span class="sr-only">Strong</span></span></td>
+                <td><span class="cell-strong">✓<span class="sr-only">Strong</span></span></td>
+                <td><span class="cell-none">–<span class="sr-only">Not primary</span></span></td>
+              </tr>
+              <tr>
+                <th scope="row">Firewalls</th>
+                <td><span class="cell-none">–<span class="sr-only">Not primary</span></span></td>
+                <td><span class="cell-partial">~<span class="sr-only">Partial</span></span></td>
+                <td><span class="cell-partial">~<span class="sr-only">Partial</span></span></td>
+                <td><span class="cell-partial">~<span class="sr-only">Partial</span></span></td>
+                <td><span class="cell-partial">~<span class="sr-only">Partial</span></span></td>
+                <td><span class="cell-none">–<span class="sr-only">Not primary</span></span></td>
+                <td><span class="cell-partial">~<span class="sr-only">Partial</span></span></td>
+                <td><span class="cell-none">–<span class="sr-only">Not primary</span></span></td>
+                <td><span class="cell-partial">~<span class="sr-only">Partial</span></span></td>
+              </tr>
+              <tr>
+                <th scope="row">Antivirus / endpoint protection</th>
+                <td><span class="cell-partial">~<span class="sr-only">Partial</span></span></td>
+                <td><span class="cell-strong">✓<span class="sr-only">Strong</span></span></td>
+                <td><span class="cell-strong">✓<span class="sr-only">Strong</span></span></td>
+                <td><span class="cell-none">–<span class="sr-only">Not primary</span></span></td>
+                <td><span class="cell-none">–<span class="sr-only">Not primary</span></span></td>
+                <td><span class="cell-none">–<span class="sr-only">Not primary</span></span></td>
+                <td><span class="cell-none">–<span class="sr-only">Not primary</span></span></td>
+                <td><span class="cell-none">–<span class="sr-only">Not primary</span></span></td>
+                <td><span class="cell-partial">~<span class="sr-only">Partial</span></span></td>
+              </tr>
+              <tr>
+                <th scope="row">Encryption</th>
+                <td><span class="cell-none">–<span class="sr-only">Not primary</span></span></td>
+                <td><span class="cell-none">–<span class="sr-only">Not primary</span></span></td>
+                <td><span class="cell-partial">~<span class="sr-only">Partial</span></span></td>
+                <td><span class="cell-none">–<span class="sr-only">Not primary</span></span></td>
+                <td><span class="cell-partial">~<span class="sr-only">Partial</span></span></td>
+                <td><span class="cell-strong">✓<span class="sr-only">Strong</span></span></td>
+                <td><span class="cell-none">–<span class="sr-only">Not primary</span></span></td>
+                <td><span class="cell-none">–<span class="sr-only">Not primary</span></span></td>
+                <td><span class="cell-none">–<span class="sr-only">Not primary</span></span></td>
+              </tr>
+              <tr>
+                <th scope="row">Updates &amp; patching</th>
+                <td><span class="cell-none">–<span class="sr-only">Not primary</span></span></td>
+                <td><span class="cell-strong">✓<span class="sr-only">Strong</span></span></td>
+                <td><span class="cell-strong">✓<span class="sr-only">Strong</span></span></td>
+                <td><span class="cell-partial">~<span class="sr-only">Partial</span></span></td>
+                <td><span class="cell-strong">✓<span class="sr-only">Strong</span></span></td>
+                <td><span class="cell-partial">~<span class="sr-only">Partial</span></span></td>
+                <td><span class="cell-none">–<span class="sr-only">Not primary</span></span></td>
+                <td><span class="cell-none">–<span class="sr-only">Not primary</span></span></td>
+                <td><span class="cell-partial">~<span class="sr-only">Partial</span></span></td>
+              </tr>
+              <tr>
+                <th scope="row">Secure backups</th>
+                <td><span class="cell-none">–<span class="sr-only">Not primary</span></span></td>
+                <td><span class="cell-partial">~<span class="sr-only">Partial</span></span></td>
+                <td><span class="cell-strong">✓<span class="sr-only">Strong</span></span></td>
+                <td><span class="cell-none">–<span class="sr-only">Not primary</span></span></td>
+                <td><span class="cell-partial">~<span class="sr-only">Partial</span></span></td>
+                <td><span class="cell-none">–<span class="sr-only">Not primary</span></span></td>
+                <td><span class="cell-none">–<span class="sr-only">Not primary</span></span></td>
+                <td><span class="cell-none">–<span class="sr-only">Not primary</span></span></td>
+                <td><span class="cell-partial">~<span class="sr-only">Partial</span></span></td>
+              </tr>
+              <tr>
+                <th scope="row">Network monitoring</th>
+                <td><span class="cell-partial">~<span class="sr-only">Partial</span></span></td>
+                <td><span class="cell-strong">✓<span class="sr-only">Strong</span></span></td>
+                <td><span class="cell-strong">✓<span class="sr-only">Strong</span></span></td>
+                <td><span class="cell-strong">✓<span class="sr-only">Strong</span></span></td>
+                <td><span class="cell-partial">~<span class="sr-only">Partial</span></span></td>
+                <td><span class="cell-partial">~<span class="sr-only">Partial</span></span></td>
+                <td><span class="cell-strong">✓<span class="sr-only">Strong</span></span></td>
+                <td><span class="cell-partial">~<span class="sr-only">Partial</span></span></td>
+                <td><span class="cell-strong">✓<span class="sr-only">Strong</span></span></td>
+              </tr>
+              <tr>
+                <th scope="row">Awareness training</th>
+                <td><span class="cell-strong">✓<span class="sr-only">Strong</span></span></td>
+                <td><span class="cell-partial">~<span class="sr-only">Partial</span></span></td>
+                <td><span class="cell-partial">~<span class="sr-only">Partial</span></span></td>
+                <td><span class="cell-none">–<span class="sr-only">Not primary</span></span></td>
+                <td><span class="cell-none">–<span class="sr-only">Not primary</span></span></td>
+                <td><span class="cell-partial">~<span class="sr-only">Partial</span></span></td>
+                <td><span class="cell-partial">~<span class="sr-only">Partial</span></span></td>
+                <td><span class="cell-strong">✓<span class="sr-only">Strong</span></span></td>
+                <td><span class="cell-none">–<span class="sr-only">Not primary</span></span></td>
+              </tr>
+              <tr>
+                <th scope="row">Access control</th>
+                <td><span class="cell-partial">~<span class="sr-only">Partial</span></span></td>
+                <td><span class="cell-partial">~<span class="sr-only">Partial</span></span></td>
+                <td><span class="cell-strong">✓<span class="sr-only">Strong</span></span></td>
+                <td><span class="cell-none">–<span class="sr-only">Not primary</span></span></td>
+                <td><span class="cell-partial">~<span class="sr-only">Partial</span></span></td>
+                <td><span class="cell-none">–<span class="sr-only">Not primary</span></span></td>
+                <td><span class="cell-partial">~<span class="sr-only">Partial</span></span></td>
+                <td><span class="cell-partial">~<span class="sr-only">Partial</span></span></td>
+                <td><span class="cell-partial">~<span class="sr-only">Partial</span></span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="legend" aria-hidden="true">
+          <span><span class="cell-strong">✓</span> Strong protection</span>
+          <span><span class="cell-partial">~</span> Partial / supporting</span>
+          <span><span class="cell-none">–</span> Not a primary control</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-label="Defense in depth note">
+      <div class="container">
+        <div class="callout">
+          <div class="callout-icon" aria-hidden="true">🧅</div>
+          <div>
+            <h2>Defense in depth</h2>
+            <p>Layer people, process and technology. Even when an attacker bypasses one control, the next layer should detect or contain them. Put these ideas into practice with the <a href="best-practices.html">Best Practices</a> checklist.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="index.html">CyberShield Academy</a>
+          <p>An educational website about cybersecurity attacks and countermeasures. Content explains threats conceptually and focuses on detection, prevention, mitigation and recovery.</p>
+        </div>
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <h2>Explore</h2>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="attacks.html">Attacks</a></li>
+            <li><a href="countermeasures.html">Countermeasures</a></li>
+            <li><a href="threats.html">Threats</a></li>
+            <li><a href="best-practices.html">Best Practices</a></li>
+            <li><a href="incident-response.html">Incident Response</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 CyberShield Academy. All rights reserved.</p>
+        <p class="edu-only">For educational and defensive purposes only.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

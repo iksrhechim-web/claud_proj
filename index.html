@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CyberShield Academy: an educational resource on cybersecurity attacks and countermeasures, focused on awareness and defense.">
+  <meta name="theme-color" content="#040813">
+  <title>Cybersecurity Attacks &amp; Countermeasures | CyberShield Academy</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ===== Shared header / navigation ===== -->
+  <header class="site-header">
+    <nav class="container nav" aria-label="Main navigation">
+      <a class="brand" href="index.html" aria-label="CyberShield Academy – home">
+        <svg class="brand-mark" viewBox="0 0 48 48" role="img" aria-label="CyberShield logo: a shield with a padlock">
+          <defs>
+            <linearGradient id="lg-home" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#00e5ff"/>
+              <stop offset="1" stop-color="#2f8bff"/>
+            </linearGradient>
+          </defs>
+          <path d="M24 3 42 9v14c0 11-7.5 18.5-18 22C13.500 41.500 6 34 6 23V9z" fill="url(#lg-home)"/>
+          <path d="M24 8 37 12.500V23c0 8.200-5.300 14-13 17-7.700-3-13-8.800-13-17V12.500z" fill="#06101c"/>
+          <rect x="17" y="22" width="14" height="11" rx="2" fill="#00e5ff"/>
+          <path d="M20 22v-3.500a4 4 0 0 1 8 0V22" fill="none" stroke="#00e5ff" stroke-width="2.500"/>
+        </svg>
+        <span>Cyber<em>Shield</em></span>
+      </a>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu">
+      <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true"><span></span><span></span><span></span></label>
+
+      <ul class="nav-links">
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="attacks.html">Attacks</a></li>
+        <li><a href="countermeasures.html">Countermeasures</a></li>
+        <li><a href="threats.html">Threats</a></li>
+        <li><a href="best-practices.html">Best Practices</a></li>
+        <li><a href="incident-response.html">Incident Response</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ===== Hero ===== -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="badge"><span class="dot" aria-hidden="true"></span> Defensive security education</p>
+          <h1 id="hero-title"><span class="gradient-text">Cybersecurity Attacks &amp; Countermeasures</span></h1>
+          <p class="lead">Cybersecurity is the practice of protecting people, devices, networks and data from digital threats. As more of daily life moves online, understanding how attacks work conceptually is the first step toward stopping them.</p>
+          <div class="btn-row">
+            <a class="btn btn-primary" href="attacks.html">Explore Attacks</a>
+            <a class="btn btn-secondary" href="countermeasures.html">Learn Countermeasures</a>
+          </div>
+        </div>
+
+        <!-- CSS-only hero visual: radar, shield and floating status chips -->
+        <div class="hero-visual" role="img" aria-label="Decorative illustration of a radar scanning for threats around a protective shield">
+          <div class="radar">
+            <div class="radar-sweep"></div>
+            <span class="blip b1"></span>
+            <span class="blip b2"></span>
+            <span class="blip b3"></span>
+          </div>
+          <div class="shield"></div>
+          <span class="float-chip c1">THREAT: BLOCKED</span>
+          <span class="float-chip c2">MFA: ENABLED</span>
+          <span class="float-chip c3">PATCH: UP TO DATE</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Attack category overview ===== -->
+    <section class="section" aria-labelledby="overview-title">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Know the risks</span>
+          <h2 id="overview-title">Major attack categories</h2>
+          <p>Attacks tend to target one of three things: people, software, or network availability. Here is a high-level map of what to watch for.</p>
+        </div>
+
+        <div class="grid grid-4">
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">🎣</div>
+            <h3>Social &amp; Human</h3>
+            <p>Phishing and social engineering exploit trust and urgency rather than technical flaws.</p>
+            <a class="card-link" href="attacks.html#phishing">Learn more</a>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">🦠</div>
+            <h3>Malicious Software</h3>
+            <p>Malware and ransomware disrupt systems, steal information or lock data for extortion.</p>
+            <a class="card-link" href="attacks.html#malware">Learn more</a>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">🌐</div>
+            <h3>Network &amp; Availability</h3>
+            <p>DDoS and man-in-the-middle attacks target connections, traffic and service uptime.</p>
+            <a class="card-link" href="attacks.html#ddos">Learn more</a>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">🗄️</div>
+            <h3>Application &amp; Credential</h3>
+            <p>Injection flaws, brute force and zero-days exploit weaknesses in software and logins.</p>
+            <a class="card-link" href="attacks.html#sql-injection">Learn more</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Statistics ===== -->
+    <section class="section section-alt" aria-labelledby="stats-title">
+      <div class="container">
+        <div class="section-head center">
+          <span class="eyebrow">Quick facts</span>
+          <h2 id="stats-title">Why the numbers matter</h2>
+        </div>
+        <div class="stats">
+          <div class="stat">
+            <span class="stat-value">80%+</span>
+            <span class="stat-label">of breaches involve a human element such as phishing or stolen credentials*</span>
+          </div>
+          <div class="stat">
+            <span class="stat-value">$4M+</span>
+            <span class="stat-label">average global cost of a data breach*</span>
+          </div>
+          <div class="stat">
+            <span class="stat-value">Every 39s</span>
+            <span class="stat-label">is a commonly cited estimate for how often an attack occurs online*</span>
+          </div>
+          <div class="stat">
+            <span class="stat-value">99%</span>
+            <span class="stat-label">of account compromise attacks are blocked by enabling MFA*</span>
+          </div>
+        </div>
+        <p class="source-note">*Figures are approximate and rounded from widely published industry reports. They vary by year and study; use them for general awareness.</p>
+      </div>
+    </section>
+
+    <!-- ===== Importance of cybersecurity ===== -->
+    <section class="section" aria-labelledby="importance-title">
+      <div class="container two-col">
+        <div>
+          <span class="eyebrow">Why it matters</span>
+          <h2 id="importance-title">The importance of cybersecurity</h2>
+          <p>Banking, healthcare, education, transport and communication all depend on digital systems. A single successful attack can expose personal information, interrupt essential services, or cause serious financial and reputational damage.</p>
+          <p>Good security is not only about technology. It combines secure systems, well-trained people and clear processes. Small habits, such as using unique passwords and installing updates, prevent a large share of real-world incidents.</p>
+          <a class="btn btn-secondary" href="best-practices.html">See best practices</a>
+        </div>
+        <div class="grid grid-2">
+          <div class="card">
+            <div class="card-icon" aria-hidden="true">🔐</div>
+            <h3>Confidentiality</h3>
+            <p>Only authorized people can access sensitive data.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon" aria-hidden="true">✅</div>
+            <h3>Integrity</h3>
+            <p>Information stays accurate and unaltered.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon" aria-hidden="true">⚡</div>
+            <h3>Availability</h3>
+            <p>Systems and data are accessible when needed.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon" aria-hidden="true">🛡️</div>
+            <h3>Trust</h3>
+            <p>Users and customers can rely on safe digital services.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== Shared footer ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="index.html">CyberShield Academy</a>
+          <p>An educational website about cybersecurity attacks and countermeasures. Content explains threats conceptually and focuses on detection, prevention, mitigation and recovery.</p>
+        </div>
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <h2>Explore</h2>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="attacks.html">Attacks</a></li>
+            <li><a href="countermeasures.html">Countermeasures</a></li>
+            <li><a href="threats.html">Threats</a></li>
+            <li><a href="best-practices.html">Best Practices</a></li>
+            <li><a href="incident-response.html">Incident Response</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 CyberShield Academy. All rights reserved.</p>
+        <p class="edu-only">For educational and defensive purposes only.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
